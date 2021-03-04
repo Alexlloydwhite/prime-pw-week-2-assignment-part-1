@@ -1,11 +1,11 @@
 // REQUIRED FEATURES:
 // 1 - Create a variable called `firstName` and assign it the value of your first name
-let firstName = 'Alex';
+const firstName = 'Alex';
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
-let lastName = 'White';
+const lastName = 'White';
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 // (remember, you already have variables for this, can you use those?)
-let fullName = firstName + ' ' + lastName;
+const fullName = firstName + ' ' + lastName;
 // 4 - Console log the value of `fullName`
 console.log(fullName);
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
@@ -13,7 +13,7 @@ let luckyNumber = 2;
 // 6 - Console log this sentence, adding in the variables you created above:
 // 'My name is (full name), and I think (lucky number) is a winner!'.
 // Refer back to the videos if you need help with this one.
-console.log('My name is', fullName + ", " + 'and i think', luckyNumber + " " + 'is a winner!');
+console.log('My name is', fullName + ", " + 'and i think', luckyNumber + " " + 'is a winner!'); // FIX THIS LINE!!
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 let adventurous = true;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
@@ -30,8 +30,7 @@ let allowedPets = 2;
 // if it's not true, console log "How about we stay home?"
 if(adventurous){
   console.log('Adventures are great!');
-}
-else {
+} else {
   console.log('How about we stay home?')
 }
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
@@ -46,11 +45,9 @@ if(luckyNumber === 2 && adventurous){
 // if the value of `pets` is greater than the value of `allowedPets`.
 if (pets < allowedPets) {
   console.log('I can have more pets!');
-}
-  if (pets === allowedPets) {
+} else if (pets === allowedPets) {
   console.log('I have enough pets!');
-}
-  if (pets > allowedPets) {
+} else if (pets > allowedPets) {
   console.log('Oh no, i have too many pets!');
 }
 // STRETCH GOALS:
@@ -60,7 +57,20 @@ if (pets < allowedPets) {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
+var mostPets;
 
+if(pets < friendsPets){
+  mostPets = friendsPets;
+} else if (pets > friendsPets){
+  mostPets = pets;
+} else if (pets === friendsPets){
+  console.log('You both have the same amount of pets!')
+}
+
+if(mostPets){
+  console.log(mostPets);
+}
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
+
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
