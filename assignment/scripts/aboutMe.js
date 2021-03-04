@@ -13,7 +13,7 @@ let luckyNumber = 2;
 // 6 - Console log this sentence, adding in the variables you created above:
 // 'My name is (full name), and I think (lucky number) is a winner!'.
 // Refer back to the videos if you need help with this one.
-console.log('My name is', fullName + ", " + 'and i think', luckyNumber + " " + 'is a winner!'); // FIX THIS LINE!!
+console.log(`My name is ${fullName}, and i think ${luckyNumber} is a winner!`);
 // 7 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 let adventurous = true;
 // 8 - Create a variable named `food`, and set its value to a string of your favorite food
@@ -31,7 +31,7 @@ let allowedPets = 2;
 if(adventurous){
   console.log('Adventures are great!');
 } else {
-  console.log('How about we stay home?')
+  console.log('How about we stay home?');
 }
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
@@ -58,7 +58,6 @@ if (pets < allowedPets) {
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
 var mostPets;
-
 if(pets < friendsPets){
   mostPets = friendsPets;
 } else if (pets > friendsPets){
@@ -71,6 +70,19 @@ if(mostPets){
   console.log(mostPets);
 }
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
-
-
+switch (mostPets) {
+  case pets < friendsPets:
+  mostPets = friendsPets;
+  break;
+  case pets > friendsPets:
+  mostPets = pets;
+  break;
+  case pets === friendsPets:
+  console.log('You both have the same amount of pets!');
+  break;
+  case mostPets:
+  console.log(mostPets);
+  break;
+}
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+adventurous ? console.log('Adventures are great!') : console.log('How about we stay home?');
