@@ -25,7 +25,7 @@ let friendsPets = 1;
 // 11 - Add two pets to your `pets` variable
 pets += 2;
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
-let allowedPets = 2;
+const allowedPets = 2;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!",
 // if it's not true, console log "How about we stay home?"
 if(adventurous){
@@ -57,7 +57,7 @@ if (pets < allowedPets) {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-var mostPets;
+let mostPets;
 if(pets < friendsPets){
   mostPets = friendsPets;
 } else if (pets > friendsPets){
