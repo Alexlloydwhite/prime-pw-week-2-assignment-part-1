@@ -21,7 +21,7 @@ let food = 'Lasagna';
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 let pets = 0;
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 1;
+let friendsPets = 2;
 // 11 - Add two pets to your `pets` variable
 pets += 2;
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
@@ -58,27 +58,26 @@ if (pets < allowedPets) {
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
 let mostPets;
+
 if(pets < friendsPets){
-  mostPets = friendsPets;
+  mostPets = 'Your friend has more pets than you!';
 } else if (pets > friendsPets){
-  mostPets = pets;
+  mostPets = 'You have more pets than your friend!';
 } else if (pets === friendsPets){
-  console.log('You both have the same amount of pets!')
+  mostPets = 'You and your friend have the same amount of pets!';
 }
 
-if(mostPets){
-  console.log(mostPets);
-}
+console.log(mostPets);
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 switch (mostPets) {
   case pets < friendsPets:
-  mostPets = friendsPets;
+  mostPets = 'Your friend has more pets than you!';
   break;
   case pets > friendsPets:
-  mostPets = pets;
+  mostPets = 'You have more pets than your friend!';
   break;
   case pets === friendsPets:
-  console.log('You both have the same amount of pets!');
+  mostPets = 'You and your friend have the same amount of pets!';
   break;
   case mostPets:
   console.log(mostPets);
